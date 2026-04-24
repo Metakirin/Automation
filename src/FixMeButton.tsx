@@ -7,14 +7,21 @@
  *
  * See FixMeButton.test.tsx for the behavioural contract the fix must satisfy.
  */
+import { useState } from 'react'
+
 export function FixMeButton() {
+  const [message, setMessage] = useState('')
+
   const handleClick = () => {
-    throw new Error('FixMeButton is broken: this should not throw.')
+    setMessage('Button clicked by Claude')
   }
 
   return (
-    <button type="button" onClick={handleClick}>
-      Fix me
-    </button>
+    <>
+      <button type="button" onClick={handleClick}>
+        Fix me
+      </button>
+      {message && <span>{message}</span>}
+    </>
   )
 }
