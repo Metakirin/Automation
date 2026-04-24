@@ -13,7 +13,7 @@ export function FixMeButton() {
   const [message, setMessage] = useState('')
 
   const handleClick = () => {
-    setMessage('Button clicked!')
+    setMessage('Button clicked by Claude')
   }
 
   return (
