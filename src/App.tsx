@@ -1,3 +1,4 @@
+import { Counter } from './Counter'
 import { FixMeButton } from './FixMeButton'
 
 export function App() {
@@ -5,11 +6,11 @@ export function App() {
     <main style={{ fontFamily: 'system-ui, sans-serif', padding: '2rem' }}>
       <h1>Automation Routine Demo</h1>
       <p>
-        Click the button below. Right now it is broken — it throws an error.
-        A Claude routine should be able to pick up the corresponding bug
-        ticket and fix it.
+        Components on this page are targeted by a nightly Claude routine
+        that watches the GitHub Project board for P1 bugs.
       </p>
       <FixMeButton />
+      <Counter />
     </main>
   )
 }
