@@ -1,3 +1,4 @@
+import { ColoredButton } from './ColoredButton'
 import { Counter } from './Counter'
 import { FixMeButton } from './FixMeButton'
 
@@ -11,6 +12,7 @@ export function App() {
       </p>
       <FixMeButton />
       <Counter />
+      <ColoredButton />
     </main>
   )
 }

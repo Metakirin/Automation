@@ -31,5 +31,11 @@ dist-ssr
 # Coverage
 coverage
 
+# Routine screenshot artifacts. The UI-bug routine writes before/after
+# screenshots into __screenshots__/issue-<N>/ and force-adds them to the
+# fix branch (so they're embeddable from raw.githubusercontent.com on the
+# branch but never accidentally committed during interactive work).
+__screenshots__
+
 # TypeScript build info
 *.tsbuildinfo
