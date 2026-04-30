@@ -11,10 +11,8 @@ export function ColoredButton() {
     <button
       type="button"
       style={{
-        // BUG: wrong colours. Per Figma the button should be a soft yellow
-        // background (#fef3c7) with dark amber text (#92400e).
-        backgroundColor: '#dc2626',
-        color: '#ffffff',
+        backgroundColor: '#fef3c7',
+        color: '#92400e',
         border: 'none',
         borderRadius: '10px',
         padding: '10px 20px',
